@@ -11,7 +11,7 @@ def timeMainOpt():
         print("Not Valid Time, Select time below 480 minutes ")
     else:
         print('You have taken ' + str(timeM) + ' mins to focus')
-        for i in range(timeM, -1, -1):
+        for i in range(timeM-1, -1, -1):
             time.sleep(60)
             if i == 0:           
                 print("You are done! Good Job!")
@@ -25,3 +25,4 @@ def timeMainOpt():
 
 
 timeMainOpt()
+    
