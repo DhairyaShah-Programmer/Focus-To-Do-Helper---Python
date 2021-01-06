@@ -1,6 +1,5 @@
 # Credit: https://github.com/DhairyaShah-Programmer
 
-import pyautogui as pt
 import time
 
 
