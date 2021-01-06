@@ -12,12 +12,12 @@ def timeMainOpt():
     else:
         print('You have taken ' + str(timeM) + ' mins to focus')
         for i in range(timeM, -1, -1):
-            time.sleep(60)
+            time.sleep(3)
             if i == 0:           
                 print("You are done! Good Job!")
                 
             else:
-                print(str(i)+ " minute elapsed of " + str(timeM) + " mins")
+                print(str(timeM-i)+ " minute elapsed of " + str(timeM) + " mins")
             
         
 
