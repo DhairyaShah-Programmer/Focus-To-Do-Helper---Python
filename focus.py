@@ -6,11 +6,12 @@ import time
 
 # Time Logic
 def timeMainOpt():
-    timeM = int(input('Enter time in Minutes: '))
+    topic = str(input("What will you do today: "))
+    timeM = int(input('How much time you will spend for ' + topic + ": "))
     if timeM > 480:
         print("Not Valid Time, Select time below 480 minutes ")
     else:
-        print('You have taken ' + str(timeM) + ' mins to focus')
+        print('You have taken ' + str(timeM) + ' mins to focus for ' + topic)
         for i in range(timeM-1, -1, -1):
             time.sleep(60)
             if i == 0:           
